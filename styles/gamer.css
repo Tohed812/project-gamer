@@ -7,7 +7,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 18px;
-  color:  #534c64;
+  color: #534c64;
   line-height: 30px;
 }
 
@@ -121,7 +121,7 @@ li.follow {
 }
 
 .banner-content h1 span {
-  background:  linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -197,7 +197,7 @@ li.follow {
 }
 
 .gamer-content h2 {
-  background:  linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -235,14 +235,14 @@ li.follow {
 }
 
 .funny-videos h2 {
-  color:  #0b0223;
+  color: #0b0223;
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 16px;
 }
 
 .funny-videos h2 span {
-  background:  linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -311,7 +311,7 @@ li.follow {
 }
 
 .section-instantplay-content h2 {
-  color:  #0b0223;
+  color: #0b0223;
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
@@ -319,7 +319,7 @@ li.follow {
 }
 
 .section-instantplay-content h2 span {
-  background:  linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -363,7 +363,7 @@ img.small {
 }
 
 .section-online-game-content h2 span {
-  background:  linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -385,7 +385,7 @@ img.small {
 
 /* career */
 .section-career {
-  background: url("../images/Group\ 65.png") no-repeat right  #ff42a5;
+  background: url("../images/Group\ 65.png") no-repeat right #ff42a5;
   background-size: contain;
   color: white;
 }
@@ -459,7 +459,7 @@ img.small {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  color:  #0b0223;
+  color: #0b0223;
   border: 2px solid transparent;
   border-radius: 50px;
   transition: 0.3s;
@@ -477,8 +477,6 @@ img.small {
 .items img {
   width: 30px;
 }
-
-
 
 /* footer */
 footer {
@@ -520,4 +518,161 @@ footer .logo h1 {
 
 p.copyright {
   color: #ffffffbf;
+}
+
+/* media */
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 20px 90px;
+  }
+
+  /* header */
+  header .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .main-menu ul {
+    flex-direction: column;
+  }
+
+  /* banner */
+  .section-banner {
+    background-image: none;
+  }
+
+  .section-banner .container {
+    padding: 0;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner-content {
+    background: url("../images/Group\ 14.png");
+    padding: 140px 25px;
+  }
+
+  .banner-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .banner-content h1 span {
+    font-size: 90px;
+    line-height: 100px;
+  }
+
+  /* gamer */
+  .section-gamer {
+    background: none;
+    padding: 0;
+  }
+
+  .gamer {
+    flex-direction: column;
+  }
+
+  .gamer-content {
+    text-align: center;
+  }
+
+  /* video */
+  .funny-videos h2 {
+    line-height: 1;
+  }
+
+  .video-container {
+    grid-template-columns: 1fr;
+  }
+
+  .v-image > img {
+    width: 100%;
+  }
+
+  /* instant play */
+  .section-instantplay .container {
+    flex-direction: column;
+  }
+
+  .section-instantplay-content {
+    text-align: center;
+    flex-basis: 30%;
+  }
+
+  img.big {
+    padding-left: 70px;
+  }
+
+  img.small {
+    position: relative;
+    bottom: 120px;
+    margin-bottom: -120px;
+    left: -8px;
+    width: 50%;
+  }
+
+  /* online game */
+  .section-online-game .container {
+    flex-direction: column-reverse;
+  }
+
+  .section-online-game-image img.big {
+    padding-right: 70px;
+  }
+
+  .section-online-game-image img.small {
+    bottom: 100px;
+    left: 60%;
+  }
+
+  .section-online-game-image img.small {
+    bottom: 120px;
+    left: 50%;
+  }
+
+  .section-online-game-content {
+    text-align: center;
+  }
+
+  /* career */
+  .section-online-game {
+    background-image: none;
+    padding: 120px 0;
+  }
+
+  .career {
+    flex-direction: column;
+    gap: 120px;
+  }
+
+  .career-content {
+    padding: 0;
+  }
+
+  .career-image {
+    visibility: visible;
+  }
+
+  .lists ul li {
+    font-size: 20px;
+  }
+
+  /* footer */
+  .footer-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+  }
 }
